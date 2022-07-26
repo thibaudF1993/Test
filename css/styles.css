@@ -73,6 +73,9 @@
 
  /* Barre de recherche */
 
+#first-third h1 {
+  font-size: 27px;
+}
 
 #search-bar {
   display: flex;
@@ -86,8 +89,8 @@ form {
 input {
   height: 50px;
   border: #F2F2F2 solid 1px;
-  text-indent: 30px;
-  width: 330px;
+  text-indent: 20px;
+  width: 230px;
   height: 60px;
 }
 
@@ -124,7 +127,7 @@ input:focus {
 }
 
 section input {
-  font-size: 25px;
+  font-size: 20px;
   font-family: Raleway-Bold;
 }
 
@@ -134,7 +137,7 @@ section input {
 
 #filters-choice {
   display: flex;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 #filters {
@@ -199,53 +202,47 @@ section input {
 }
 
 #first-third {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
-/* Maquette pour tablette */
-
-    /* Étape 6 : Réalisez la “card” présente dans
+/* Étape 6 : Réalisez la “card” présente dans
 “Hébergements à Marseille” */
 
 
 #lodgings img {
-  width: 350px;
-  height: 130px;
+  width: 370px;
+  height: 150px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   object-fit: cover;
   display: block;
-  margin: 0px auto;
-  padding-top: 1%;
+  padding: 6px;
 }
 
 #lodgings .card {
-  box-shadow: 0px 5px 20px #999;
+  box-shadow: 0px 2px 20px #c1bfbf;
   background-color: white;
   border-radius: 25px;
-  padding: 0.2% 0.5%;
 }
 
 #mid .card-body {
-  padding: 20px 34px;
+  padding: 0px 15px;
+  height: 100px;
 }
-
 
 .card-price {
   height: 25px;
-  
   position: relative;
   bottom: 5px;
 }
 
-#mid a.popular-link {
-  display: flex;
-  color: black; 
-  text-decoration: none;
-}
-
 #mid a:hover {
   color: #0065FC;
+}
+
+#lodgings a {
+  color: black; 
+  text-decoration: none;
 }
 
 .card:hover {
@@ -253,8 +250,14 @@ section input {
   outline-color :#0065FC;
 }
 
-#mid h2 {
+#top-pop h2 {
   font-size: 18px;
+  width: 195px;
+}
+
+#lodgings h2 {
+  font-size: 18px;
+  width: 210px;
 }
 
 .card-price span {
@@ -288,23 +291,37 @@ populaires” */
 
 #top-pop .card {
   width: 450px;
-  box-shadow: 0px 5px 20px #999;
+  box-shadow: 0px 2px 22px #c5c2c2;
   background-color: white;
   border-radius: 25px;
-  height: 210px;
+  height: 190px;
+  margin-bottom: 20px;
 }
 
 #top-pop .card-picture {
   overflow: hidden;
-  height: 210px;
-  width: 170px;
+  height: 190px;
+  width: 165px;
   flex-grow: 0;
   flex-shrink: 0;
 }
 
+#mid a.popular-link {
+  display: flex;
+  color: black; 
+  text-decoration: none;
+}
+
+#top-pop a:hover {
+  color: #0065FC;
+}
 
 #top-pop .card-price {
   height: 80px;
+}
+
+#cards-top-pop {
+  padding: 0px 20px;
 }
 
 /* Étape 8 : Gérez l’affichage des conteneurs
@@ -312,7 +329,9 @@ populaires” */
 
 #mid section {
   border-radius: 25px;
-  margin-top: 2%;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
 }
 
 #mid {
@@ -320,24 +339,17 @@ populaires” */
 }
 
 #lodgings {
-  margin-left: 30px;
-  margin-right: 2%;
+  margin-left: 20px;
+  margin-right: 15px;
   background-color: #F2F2F2;
-  padding: 1%;
 }
 
 #top-pop {
-  padding: 2%;
   background-color: #F2F2F2;
-  margin: 2% auto 0 auto; 
-}
-
-#top-pop .card {
-  margin-bottom: 8%;
 }
 
 #lodgings .card {
-  margin: 2% 1.5% 2% 1.5%;
+  margin: 10px 30px 25px 30px;
 }
 
 #cards-lodgings {
@@ -349,29 +361,28 @@ populaires” */
 #mid header {
   display: flex;
   align-items: center;
-  height: 40px;
-  margin-bottom: 9%;
+  margin-left: 30px;
 }
 
 #lodgings h1 {
-  padding-left: 3%;
+  padding-left: 30px;
 }
 
 #link {
-  padding-left: 3%;
-  padding-top: 5%;
+  padding: 18px 0 20px 30px;
   font-family: Raleway-Semi-Bold;
 }
 
 header i {
   font-size: 25px;
+  position: relative;
+  right: 15px;
 }
 
 /* Étape 9 : Intégrez le conteneur “Activités à Marseille” */
 
 #activities {
-  margin: 3% 2% 0% 30px;
-  padding-bottom: 2%;
+  margin: 10px;
 }
 
 #activities-card {
@@ -381,7 +392,7 @@ header i {
 }
 
 .xl, #small, #large, #medium1, #medium2 { 
-  box-shadow: 0px 5px 20px #999;
+  box-shadow: 0px 2px 20px #c3c1c1;
   background-color: white;
   border-radius: 25px;
 }
@@ -425,10 +436,14 @@ header i {
   font-size: 14px;
 }
 
+#activities h1 {
+  margin-left: 30px;
+}
+
 #activities h2 {
   font-family: Raleway-Semi-Bold;
   position: relative;
-  top: 0px;
+  bottom: 15px;
 }
 
 #activities .card-title {
@@ -457,14 +472,13 @@ header i {
 footer  {
   background-color: #F2F2F2;
   display: flex;
-  margin-top: 2%;
-  padding-top: 2%;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
 #contain1 {
   margin-left: 30px;
   width: 32%;
-  margin-bottom: 2%;
 }
 
 #contain2 {
@@ -488,15 +502,16 @@ footer a:hover {
 
 
 
+/* Maquette pour tablette */
 
 @media all and (min-width: 768px) and (max-width: 992px){
        
   h1 + p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   section input {
-    font-size: 30px;
+    font-size: 25px;
     font-family: Raleway-Bold;
   }
 
@@ -532,7 +547,9 @@ footer a:hover {
   }
 
   #top-pop {
-    width: 455px;
+    width: 490px;
+    margin-left: 20px;
+    margin-bottom: 50px;
   }
 
   #cards-lodgings {
@@ -550,11 +567,13 @@ footer a:hover {
 
   #activities-card {
     flex-wrap: wrap;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   #activities h1 {
-    padding-top: 5%;
-    margin-bottom: 5%;
+    padding-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -579,7 +598,6 @@ footer a:hover {
 
   header {
     flex-direction: column;
-    width: 100%;
     }
 
   .menu-item {
@@ -607,31 +625,31 @@ footer a:hover {
     }
 
   nav a {
-    font-size: 31px;
+    font-size: 23px;
     }
 
       /* Barre de recherche */
 
 
   h1 + p {
-    font-size: 31px;
+    font-size: 17px;
     }
 
   .fa-magnifying-glass {
     background-color: #0065FC;
-    font-size: 35px;
-    padding: 36px;
+    font-size: 21px;
+    padding: 28px 25px 28px 25px;
     color: white;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 23px;
     position: relative;
     right: 30px;
     visibility: visible;
   }
 
   .fa-location-dot {
-    padding:  32px 50px 34px 35px;
-    font-size: 40px;
+    padding: 25px 25px 24px 20px;
+    font-size: 27px;
   }
 
   #research {
@@ -639,16 +657,15 @@ footer a:hover {
   }
 
   input {
-    width: 485px;
-    height: 100px;
+    height: 70px;
   }
 
   #search-bar {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 
   section input {
-    font-size: 40px;
+    font-size: 20px;
     font-family: Raleway-Bold;
   }
 
@@ -657,22 +674,23 @@ footer a:hover {
 
   #filters {
     flex-wrap: wrap;
-    font-size: 30px;
+    font-size: 18px;
   }
 
   #filters .fa-solid {
-    font-size: 32px;
+    font-size: 29px;
     margin-right: 15px;
-    padding: 23px;
+    padding: 19px;
   }
 
   #filter-2 .fa-solid {
-    padding: 25px 30px;
+    padding: 19px 24px;
   }
 
   #filter-1, #filter-2, #filter-3, #filter-4 {
     padding: 12px 35px 12px 0px;
     width: auto;
+    height: 35px;
   }
 
   #filters-choice {
@@ -684,16 +702,16 @@ footer a:hover {
   }
 
   #info {
-    font-size: 31px;
-    padding-bottom: 5%;
+    font-size: 20px;
+    padding-bottom: 50px;
   }
 
   #info p {
-    padding-left: 2%;
+    padding-left: 6px;
   }
 
   #info i {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   /* Cards "Les plus populaires" & "Hébergements à Marseille" */
@@ -704,56 +722,48 @@ footer a:hover {
 
   #mid #top-pop {
     border-radius: 0px;
-    margin: 0 auto;
-    max-width: fit-content;
+    margin-right: 0px;
+  }
+
+  #top-pop h1 {
+    font-size: 26px;
+    font-family: Raleway-Semi-Bold;
+    text-align: center;
   }
 
   #top-pop header {
     flex-direction: row;
-    padding: 5% 0 0 2%;
-    font-size: 23px;
     font-family: Raleway-Semi-Bold;
   }
 
   #mid #lodgings {
     background-color: transparent;
+    margin-left: 10px;
   }
 
   #top-pop .card {
-    padding: 0;
-    margin-bottom: 5%!important;
     width: 100%;
-    max-width: 450px;
+    padding-right: 60px;
+  }
+
+  #cards-top-pop {
+    margin-left: 10px;
+    margin-right: 60px;
   }
 
   .card-body {
-    font-size: 24px;
-  }
-
-  #top-pop .card-price {
-    /* height: 130px!important; */
+    font-size: 17px;
   }
 
   header i {
     position: relative;
-    right: 25px;
-    font-size: 40px!important;
+    right: 30px;
+    font-size: 25px!important;
   }
 
   #lodgings h1 {
-    font-size: 40px;
+    font-size: 26px;
     font-family: Raleway-Semi-Bold;
-    margin-left: -30px;
-  }
-
-  #lodgings img {
-    height: 230px!important;
-    width: 680px!important;
-  }
-
-  #lodgings .card {
-    position: relative;
-    right: 20px;
   }
 
   #lodgings .card-price {
@@ -761,57 +771,133 @@ footer a:hover {
   }
 
   #link {
-    font-size: 26px;
+    font-size: 16px;
     font-family: Raleway-Bold;
-    margin-top: 2%;
-    margin-bottom: 6%;
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 
-/* Cards "Activités à Marseille" */
+  body {
+    max-width: 767px;
+    width : 100%;
+  }
+
+  /* Cards "Activités à Marseille" */
 
   #activities h1 {
-    font-size: 40px;
+    font-size: 25px;
     font-family: Raleway-Semi-Bold;
-    margin-bottom: 7%;
+    margin-bottom: 25px;
+  }
+  #activities h2 {
+    font-size: 20px;
   }
 
   #activities-card {
     flex-wrap: wrap;
   }
 
-  .xl, #small, #large, #medium1, #medium2 {
-    height: 370px;
-  }
-
   .xl img,#small img, #large img, #medium1 img, #medium2 img {
-    width: 680px!important;
-    height: 250px!important;
+    height: 140px!important;
+    overflow:hidden;
   }
 
   .xl, #small, #medium2 {
-    margin-bottom: 9%;
+    margin-bottom: 30px;
   }
+
+  /* Footer */
 
   footer {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 18px;
   }
 
   #contain2, #contain3 {
-    margin-bottom: 2%;
     margin-left: 30px;
-    width: 400px;
   }
 
   footer .title {
-    font-size: 35px;
-    width: 400px;
-    padding-bottom: 30px;
+    font-size: 21px;
+    padding-bottom: 15px;
   }
 
   footer p {
-    width: 500px;
+    width: 255px;
   }
 }
 
+
+@media all and (max-width: 404px){
+  #lodgings img {
+    width: 270px;
+  }
+
+  #top-pop .card-body {
+    width: 120px!important;
+    font-size: 15px;
+  }
+
+  #top-pop {
+    min-width: 340px;
+  }
+
+  #top-pop h2 {
+    width: 120px!important;
+    font-size: 16px;
+  }
+
+  input {
+    width: 200px!important;
+    height: 50px;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 16px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .fa-location-dot {
+    padding: 19px 18px 17px 18px;
+    font-size: 20px;
+  }
+
+  section input {
+    font-size: 16px;
+  }
+
+  #activities img {
+    width: 333px!important;
+    height: 140px!important;
+    overflow: hidden;
+  }
+
+  #activities h2 {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 17px;
+  }
+
+  footer .title {
+    font-size: 18px;
+  }
+
+  #first-third h1 {
+    font-size: 22px;
+  }
+
+  nav a {
+    font-size: 21px;
+  }
+
+  #info {
+    font-size: 16px;
+  }
+
+  #filters {
+    font-size: 16px;
+  }
+}
