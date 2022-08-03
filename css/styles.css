@@ -27,7 +27,6 @@
     src: url(Raleway-SemiBold.ttf);
  }
 
-
  /* header */
 
 
@@ -84,13 +83,14 @@
 
 form {
   border: #F2F2F2 solid 1px;
+  max-width: 567px;
+  width: 100%;
 }
 
 input {
   height: 50px;
   border: #F2F2F2 solid 1px;
   text-indent: 20px;
-  width: 230px;
   height: 60px;
 }
 
@@ -129,6 +129,7 @@ input:focus {
 section input {
   font-size: 20px;
   font-family: Raleway-Bold;
+  width: 100%;
 }
 
 
@@ -210,30 +211,32 @@ section input {
 
 
 #lodgings img {
-  width: 370px;
-  height: 150px;
+  width: 94%;
+  height: 110px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   object-fit: cover;
   display: block;
-  padding: 6px;
+  margin: 7px auto;
 }
 
 #lodgings .card {
   box-shadow: 0px 2px 20px #c1bfbf;
   background-color: white;
   border-radius: 25px;
+  width: 31%;
 }
 
 #mid .card-body {
-  padding: 0px 15px;
-  height: 100px;
+  padding: 0px 10px;
+  height: 70px;
 }
 
 .card-price {
-  height: 25px;
+  height: 15px;
   position: relative;
   bottom: 5px;
+  font-size: 13px;
 }
 
 #mid a:hover {
@@ -251,12 +254,11 @@ section input {
 }
 
 #top-pop h2 {
-  font-size: 18px;
-  width: 195px;
+  font-size: 16px;
 }
 
 #lodgings h2 {
-  font-size: 18px;
+  font-size: 15px;
   width: 210px;
 }
 
@@ -266,6 +268,7 @@ section input {
 
 .card-rating {
   display: flex;
+  font-size: 14px;
 }
 
 .blue-stars {
@@ -281,27 +284,26 @@ populaires” */
 
 
 #top-pop img {
-  width: 170px;
+  width: 100%;
   height: calc(100% - 10px);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   object-fit: cover;
-  margin: 5px 0 5px 5px;
+  margin: 5px 0px 5px 5px;
 }
 
 #top-pop .card {
-  width: 450px;
   box-shadow: 0px 2px 22px #c5c2c2;
   background-color: white;
   border-radius: 25px;
-  height: 190px;
+  height: 160px;
   margin-bottom: 20px;
 }
 
 #top-pop .card-picture {
   overflow: hidden;
-  height: 190px;
-  width: 165px;
+  height: 160px;
+  width: 40%;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -317,21 +319,30 @@ populaires” */
 }
 
 #top-pop .card-price {
-  height: 80px;
+  height: 50px;
 }
 
 #cards-top-pop {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 /* Étape 8 : Gérez l’affichage des conteneurs
 “Hébergements à Marseille” et “Les plus populaires” */
 
+#first-row {
+  display: flex;
+  width: 95%;
+}
+
+#second-row {
+  display: flex;
+  width: 95%;
+}
+
 #mid section {
   border-radius: 25px;
   margin-top: 20px;
   margin-right: 20px;
-  padding-bottom: 30px;
 }
 
 #mid {
@@ -340,8 +351,8 @@ populaires” */
 
 #lodgings {
   margin-left: 20px;
-  margin-right: 15px;
   background-color: #F2F2F2;
+  width: 67%;
 }
 
 #top-pop {
@@ -349,7 +360,7 @@ populaires” */
 }
 
 #lodgings .card {
-  margin: 10px 30px 25px 30px;
+  margin: 0px 5px 25px 10px;
 }
 
 #cards-lodgings {
@@ -359,22 +370,23 @@ populaires” */
 }
 
 #mid header {
-  display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 10px;
+  font-size: 12px;
 }
 
 #lodgings h1 {
   padding-left: 30px;
+  font-size: 25px;
 }
 
 #link {
-  padding: 18px 0 20px 30px;
+  padding: 18px 0px 0px 30px;
   font-family: Raleway-Semi-Bold;
 }
 
 header i {
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   right: 15px;
 }
@@ -387,8 +399,7 @@ header i {
 
 #activities-card {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .xl, #small, #large, #medium1, #medium2 { 
@@ -400,40 +411,40 @@ header i {
 #activities img {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  width: 400px;
+  width: 100%;
 }
 
 .xl img {
-  height: 579px;
+  height: 399px;
   object-fit: cover;
 }
 
 #large img {
-  height: 303px;
+  height: 198px;
   object-fit: cover;
 }
 
 #large {
-  margin-bottom: 10%;
+  margin-bottom: 25px;
 }
 
 #small img {
-  height: 182px;
+  height: 128px;
   object-fit: cover;
 }
 
 #medium1 img, #medium2 img {
-  height: 232.5px;
+  height: 163px;
 }
 
 #medium1 {
-  margin-bottom: 15%;
+  margin-bottom: 25px;
 }
 
 #activities a {
   text-decoration: none;
   color: black;
-  font-size: 14px;
+  font-size: 9px;
 }
 
 #activities h1 {
@@ -442,12 +453,7 @@ header i {
 
 #activities h2 {
   font-family: Raleway-Semi-Bold;
-  position: relative;
-  bottom: 15px;
-}
-
-#activities .card-title {
-  height: 10px;
+  margin: 10px 0px 10px 15px;
 }
 
 .xl:hover, #small:hover, #large:hover, #medium1:hover, #medium2:hover {
@@ -461,10 +467,11 @@ header i {
 
 .xl, #second-column, #fourth-column {
   margin: 1% 1.5% 2% 1.5%;
+  width: 22%;
 }
 
 #activities .card-body {
-  padding: 12px 20px;
+  padding: 5px 15px;
 }
 
 /* Étape 10 : Implémenter le footer */
@@ -500,8 +507,6 @@ footer a:hover {
   height: 30px;
 }
 
-
-
 /* Maquette pour tablette */
 
 @media all and (min-width: 768px) and (max-width: 992px){
@@ -513,6 +518,7 @@ footer a:hover {
   section input {
     font-size: 25px;
     font-family: Raleway-Bold;
+    width: 100%;
   }
 
   #filters-choice {
@@ -546,8 +552,12 @@ footer a:hover {
     flex-direction: column;
   }
 
+  #lodgings {
+    width: 96%;
+  }
+
   #top-pop {
-    width: 490px;
+    width: 500px;
     margin-left: 20px;
     margin-bottom: 50px;
   }
@@ -563,6 +573,8 @@ footer a:hover {
 
   #link {
     font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 
   #activities-card {
@@ -575,6 +587,7 @@ footer a:hover {
     padding-top: 10px;
     margin-bottom: 30px;
     text-align: center;
+    font-size: 25px;
   }
 
   #activities {
@@ -585,7 +598,6 @@ footer a:hover {
   #contain1 {
     width: 35%!important;
   }
-
 }
 
 
@@ -665,8 +677,9 @@ footer a:hover {
   }
 
   section input {
-    font-size: 20px;
+    font-size: 30px;
     font-family: Raleway-Bold;
+    width: 100%;
   }
 
     /* filtres */
@@ -726,7 +739,7 @@ footer a:hover {
   }
 
   #top-pop h1 {
-    font-size: 26px;
+    font-size: 33px;
     font-family: Raleway-Semi-Bold;
     text-align: center;
   }
@@ -738,21 +751,21 @@ footer a:hover {
 
   #mid #lodgings {
     background-color: transparent;
-    margin-left: 10px;
+    margin: 0px;
   }
 
   #top-pop .card {
-    width: 100%;
-    padding-right: 60px;
+    height: auto;
   }
 
   #cards-top-pop {
+    min-width: 315px;
     margin-left: 10px;
     margin-right: 60px;
   }
 
   .card-body {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   header i {
@@ -762,7 +775,7 @@ footer a:hover {
   }
 
   #lodgings h1 {
-    font-size: 26px;
+    font-size: 33px;
     font-family: Raleway-Semi-Bold;
   }
 
@@ -782,6 +795,60 @@ footer a:hover {
     width : 100%;
   }
 
+  #first-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #second-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #lodgings img {
+    height: 230px;
+    width: 98%;
+  }
+
+  #lodgings .card-picture {
+    width: 100%;
+  }
+
+  #lodgings .card {
+    width: 145%;
+    height: 375px;
+  }
+
+  #lodgings h2 {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  #lodgings .card-body {
+    padding-left: 20px;
+  }
+
+  #lodgings .card-rating, #lodgings .card-price {
+    font-size: 20px;
+  }
+
+  #top-pop h2 {
+    font-size: 18px;
+  }
+
+  #top-pop .card-price, #top-pop .card-rating {
+    font-size: 16px;
+  }
+
+  #top-pop img {
+    width: 100%;
+  }
+
+  #top-pop .card-picture {
+    width: 200px;
+    height: 190px;
+  }
+
   /* Cards "Activités à Marseille" */
 
   #activities h1 {
@@ -790,11 +857,12 @@ footer a:hover {
     margin-bottom: 25px;
   }
   #activities h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   #activities-card {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
   }
 
   .xl img,#small img, #large img, #medium1 img, #medium2 img {
@@ -802,9 +870,31 @@ footer a:hover {
     overflow:hidden;
   }
 
-  .xl, #small, #medium2 {
+  #activities img {
+    height: 230px!important;
+    width: 100%;
+  }
+
+  #activities .card-picture {
+    width: 100%;
+  }
+
+  #activities .card {
+    width: 145%;
+    height: 375px;
+  }
+  
+  .xl, #second-column, #fourth-column {
+    width: 98%;
+  }
+
+  .xl, #small, #large, #medium1, #medium2 {
     margin-bottom: 30px;
   }
+
+
+
+
 
   /* Footer */
 
@@ -824,19 +914,21 @@ footer a:hover {
   }
 
   footer p {
-    width: 255px;
+    width: auto;
   }
 }
 
 
 @media all and (max-width: 404px){
+  
   #lodgings img {
-    width: 270px;
+    width: 97%;
   }
 
   #top-pop .card-body {
-    width: 120px!important;
+    width: 100%;
     font-size: 15px;
+    padding: 0px 0px 0px 5px;
   }
 
   #top-pop {
@@ -851,6 +943,11 @@ footer a:hover {
   input {
     width: 200px!important;
     height: 50px;
+  }
+
+  form {
+    max-width: 215px;
+    width: 100%;
   }
 
   .fa-magnifying-glass {
@@ -868,7 +965,7 @@ footer a:hover {
   }
 
   #activities img {
-    width: 333px!important;
+    width: 100%;
     height: 140px!important;
     overflow: hidden;
   }
@@ -899,5 +996,9 @@ footer a:hover {
 
   #filters {
     font-size: 16px;
+  }
+
+  #top-pop h1 {
+    font-size: 25px;
   }
 }
